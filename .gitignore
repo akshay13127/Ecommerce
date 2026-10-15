@@ -1,0 +1,24 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode & cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment secrets
+.env
+
+# Database
+*.sqlite3
+
+# Add these lines to your .gitignore file
+elasticsearch-*/
+node_modules/
+.venv/
+venv/
+*.dll
+*.so
+*.exe

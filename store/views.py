@@ -404,7 +404,8 @@ class ProductsListView(APIView):
                 })
 
             facets = results.get('aggregations', {}) if include_facets else {}
-
+            # context['total_pages'] = range(1, paginator.num_pages + 1)
+            # context['current_page'] = page_obj.number
             total_pages = (total + per_page - 1) // per_page
             context = {
                 'products': filtered_hits,
